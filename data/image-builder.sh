@@ -119,7 +119,7 @@ info "Downloading Magento 2 source code..."
 $DOCKER_RUN composer create-project \
     --no-interaction \
     --repository-url=https://repo.magento.com/ \
-    magento/project-community-edition=$VERSION.* \
+    magento/project-enterprise-edition=$VERSION.* \
     /src
 
 if [ "$SAMPLE_DATA" = "true" ]; then
